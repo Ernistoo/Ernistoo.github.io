@@ -2,6 +2,7 @@ header {
     position: fixed;
     top:0;
     left:0;
+    height: 50px;
     background-color: plum;
     width: 100vw;
 }
@@ -30,6 +31,7 @@ ul{
 
 li{
     list-style: none;
+    transition: transform 0.5s;
 }
 
 a{
@@ -46,8 +48,73 @@ img {
     display: none;
 }
 
+
+
+input {
+    display:none;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+li:hover{
+    transform:scale(1.4);
+}
+input:hover {
+   cursor: pointer;
+}
+
+nav {
+    position:relative;
+}
+.menu{
+    transition: transform 1s;
+    transform:scale(1) rotate(1800deg);
+}
+.close{
+    transition: transform 1s;
+    transform: scale(0) rotate(1800deg);
+       position: absolute;
+       top: 0;
+       left: 0;
+}
+
 @media (max-width: 600px){
     img {
+        display: block;
+        
+    }
+    ul{
+        position: absolute;
+        top: 30px;
+        right: 600px;
+        gap: 10px;
+        background-color: plum;
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        transition: right 0.6s;
+    }
+    input:checked + ul {
+        top: 30px;
+        right: 0;
+    }
+    input:checked ~ .close{
+        transform: scale(1);
+       
+    }
+    input:checked ~ .menu{
+        transform: scale(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+    input {
         display: block;
     }
 }
