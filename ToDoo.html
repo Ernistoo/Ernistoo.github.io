@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do uzdevumi</title>
+    <link rel ="stylesheet" href="todoo.css"/>
+    <style>
+      body {
+  background-image: url('todooo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+      .smuka-poga {
+        cursor: pointer;
+        border: none;
+        background-color: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To Do</h1>
+
+    <form onsubmit="handleSubmit(event)">
+      <label>Ievadi uzdevumu</label>
+      <input id="uzdevums" type="text" />
+      <button>Spied</button>
+    </form>
+    <ul id="saraksts"></ul>
+    <script>
+      const uzdevumi = [];
+      function handleSubmit(event) {
+        event.preventDefault();
+        const uzdevums = document.getElementById("uzdevums").value;
+        uzdevumi.push(uzdevums);
+        console.log(uzdevumi);
+        displayItem();
+      }
+      function displayItem() {
+        const list = document.getElementById("saraksts");
+        list.innerHTML = "";
+        uzdevumi.forEach((viensUzdevums, id) => {
+          const newListItem = document.createElement("li");
+          newListItem.textContent = viensUzdevums;
+
+          list.appendChild(newListItem);
+          newListItem.style.color = "white";
+          newListItem.style.fontSize = "20px";
+
+          const poga = document.createElement("button");
+          poga.onclick = () => handleDelete(id);
+          poga.classList.add("smuka-poga");
+          poga.textContent = "❌";
+          newListItem.appendChild(poga);
+        });
+      }
+      function handleDelete(id) {
+        console.log("Poga ir nospiesta");
+        uzdevumi.splice(id, 1);
+        displayItem();
+      }
+    </script>
+  </body>
+</html>

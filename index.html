@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel ="stylesheet" href="index.css"/>
+    <style>
+    .flex-container {
+        display: flex;
+        
+      }
+      
+      .flex-container > div {
+        background-color: #b95eaa;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        border: 5px solid #db9bd1;
+      }
+    </style>  
 </head>
 <body>
     <header>
@@ -17,17 +31,24 @@
                 
             </ul>
             <img class="menu" src="menu.svg" alt="Menu" />
-        <img class="close" src="close.svg" alt="Clsoe" />
+        <img class="close" src="close.svg" alt="Close" />
         </nav>
         
     </header>
     <main>
         <h1>Ernesta portfolio</h1>
-        <p>Nem darba</p>
-        <p>Mācos Vidzemes Tehnoloģiju un Dizaina Tehnikumā kā programmētājs, šeit ir parādīti visi mani darbi kurus esmu darījis</p>
-        <div class="parent">
-            <div class="child">
-            </div>
+        <br><br>
+        <h2>Šis esmu es</h2>
+        <img class="es" src="Snapinsta.app_322283006_1804257653293922_5029626109468446992_n_1024.jpg" style="max-width: 100%;">
+        
+        <p>Mācos Vidzemes Tehnoloģiju un Dizaina Tehnikumā kā programmētājs, šeit varat apskatīt dažus darbus, kurus esmu darījis mācoties programmēšanu:</p>
+
+    <br>
+    <div class="flex-container">
+        <div><a href="gadalaiki.html">Gadalaiki</a></div>
+        <div><a href="ToDoo.html">To Do Saraksts</a></div>  
+      </div>
+        
     </main>
     <footer></footer>
 </body>
