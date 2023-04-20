@@ -62,7 +62,7 @@ input {
     z-index: 10;
 }
 li:hover{
-    transform:scale(1.4);
+    transform:scale(1.3);
 }
 input:hover {
    cursor: pointer;
@@ -126,17 +126,63 @@ body {
 
   h1{
       word-spacing: 5px;
+      text-align: center;
+  }
+  h2{
+      text-align:center;
   }
   p{
       word-spacing: 5px;
-      margin-top: 8vw;
+      
       font-size: 120%;
+      text-align:center;
   }
-
+  
   .es{
-      display:block;
+    display:grid;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
+  
+  .es2{
+    display:grid;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  .flex-container > div:hover {
+    transform: scale(1.1);
+  }
+  html {
+    scroll-behavior: smooth;
+}
+
+
+  .image-container {
+      max-width:100%;
+    margin-right:auto;
+    margin-left:auto;
+    width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    row-gap: 10px;
+  }
+
+  

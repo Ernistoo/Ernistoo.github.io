@@ -7,9 +7,12 @@
     <title>Portfolio</title>
     <link rel ="stylesheet" href="index.css"/>
     <style>
+    
+    
     .flex-container {
         display: flex;
-        
+        align-items: center;
+  justify-content: center;
       }
       
       .flex-container > div {
@@ -19,35 +22,38 @@
         font-size: 30px;
         border: 5px solid #db9bd1;
       }
+      
     </style>  
 </head>
 <body>
+    
     <header>
         <nav>
             <input type="checkbox" />
             <ul>
-                <li><a href = "par-mani.html">Par mani</a></li>
-                <li><a href = "projekti.html">Projekti</a></li>
-                
+                <li><a href="par-mani.html">Par mani</a></li>
+                <li><a href="kontakti.html">Kontakti</a></li>
+                <li><a href="#projekti">Projekti</a></li>
             </ul>
             <img class="menu" src="menu.svg" alt="Menu" />
-        <img class="close" src="close.svg" alt="Close" />
+            <img class="close" src="close.svg" alt="Close" />
         </nav>
-        
     </header>
     <main>
-        <h1>Ernesta portfolio</h1>
+        <strong><h1 class="line">Ernesta portfolio</h1></strong>
         <br><br>
         <h2>Šis esmu es</h2>
-        <img class="es" src="Snapinsta.app_322283006_1804257653293922_5029626109468446992_n_1024.jpg" style="max-width: 100%;">
-        
-        <p>Mācos Vidzemes Tehnoloģiju un Dizaina Tehnikumā kā programmētājs, šeit varat apskatīt dažus darbus, kurus esmu darījis mācoties programmēšanu:</p>
-
-    <br>
-    <div class="flex-container">
-        <div><a href="gadalaiki.html">Gadalaiki</a></div>
-        <div><a href="ToDoo.html">To Do Saraksts</a></div>  
-      </div>
+        <div class="image-container">
+        <img class="es" src="bilde.jpg" style="max-width: 100%;">
+        <img class="es2" src="bilde2.jpg" style="max-width: 100%;">
+        </div>
+        <article>
+            <p>Mācos Vidzemes Tehnoloģiju un Dizaina Tehnikumā kā programmētājs, šeit varat apskatīt dažus darbus, kurus esmu darījis mācoties programmēšanu:</p>
+        </article>
+        <div class="flex-container" id="projekti">
+            <div class="1"><a href="gadalaiki.html">Gadalaiki</a></div>
+            <div class="2"><a href="ToDoo.html">To Do Saraksts</a></div>  
+        </div>
         
     </main>
     <footer></footer>
