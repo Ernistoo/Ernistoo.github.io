@@ -1,3 +1,6 @@
+*{
+    color:aliceblue;
+}
 header {
     position: fixed;
     top:0;
@@ -72,12 +75,12 @@ nav {
     position:relative;
 }
 .menu{
-    transition: transform 1s;
-    transform:scale(1) rotate(1800deg);
+    transition: transform 0.7s;
+    transform:scale(1) rotate(360deg);
 }
 .close{
-    transition: transform 1s;
-    transform: scale(0) rotate(1800deg);
+    transition: transform 0.7s;
+    transform: scale(0) rotate(360deg);
        position: absolute;
        top: 0;
        left: 0;
@@ -126,40 +129,55 @@ body {
 
   h1{
       word-spacing: 5px;
-      text-align: center;
+     text-align: center;
+     justify-content: center;
+    
   }
   h2{
       text-align:center;
   }
+  h3{
+    text-align: center;
+    margin-top: 100px;
+  }
+  
   p{
       word-spacing: 5px;
-      
+      margin-top: 150px;
       font-size: 120%;
       text-align:center;
   }
-  
+  .es:hover{
+    transform:scale(1.03);
+  }
+  .es2:hover{
+    transform:scale(1.03);
+  }
   .es{
     display:grid;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 4px;
     padding: 5px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 1s;
   }
   
   .es2{
     display:grid;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 4px;
     padding: 5px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.5s;
   }
-
+  
   .flex-container {
     display: flex;
+    margin-top: 40px;
   }
   
   .flex-container > div {
@@ -185,4 +203,54 @@ body {
     row-gap: 10px;
   }
 
+ 
+ .line {
+   display: inline-block;
+   position: relative;
+   
+ }
+ 
+ .line:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: rgb(125, 5, 180);
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ .line:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
+
+ .sliced {
+  background-image: linear-gradient(
+    -225deg,
+    #ff0000 0%,
+    #ff5100 29%,
+    #ff9900 67%,
+    #fffb00 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

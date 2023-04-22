@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    margin-top: 50px;
+    background: -webkit-linear-gradient(#00d9ff, #f7fc00a3);
+    background-clip:content-box ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+h2{
+    margin-top: 50px;
+}
+.vards2{
+    margin-left:50px;
+}
+
+.skola{
+    rotate:360deg;
+    transition: transform 0.5s;
+    border-radius:20%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skola:hover{
+transform: rotate(360deg);
+}

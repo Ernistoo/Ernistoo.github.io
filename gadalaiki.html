@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gadalaiki</title>
     <style>
+      a{
+        color:rgb(255, 238, 0);
+      }
+      a:hover{
+        color: red;
+      }
       body {
         background-image: url('ziema.jpg');
         
@@ -16,7 +22,7 @@
     </style>
 </head>
 <body>
-
+<a href="index.html">Atpakaļ uz portfolio</a>
     <h1>Gadalaiki</h1>
     <button onclick="handleDelete()">Dzest pedejo</button>
     <ul id="saraksts"></ul>
@@ -24,9 +30,6 @@
     <ul id="saraksts"></ul>
     <script>
       const gadalaiki = ["ziema", "pavasaris", "vasara", "rudens"];
-      
-        
-       
         gadalaiki.forEach((viensGadalaiks) => {
           const listItem = document.createElement("li");
           listItem.textContent = viensGadalaiks;

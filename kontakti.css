@@ -1,0 +1,52 @@
+body{
+    background-image: url('vivid-blurred-colorful-background_58702-2545.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+h1{
+    background: -webkit-linear-gradient(#000000, #087467a3);
+    background-clip:content-box ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-align: center;
+    transition: transform 0.5s;
+}
+h2{
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+h3{
+  margin-top: 200px;
+  text-align: center;
+}
+h1:hover{
+    transform: scale(1.1);
+    
+}
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    margin-left: 30%;
+    margin-top: 150px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+  .fa-instagram {
+    background: linear-gradient(to bottom, #0f89d5 0%, #dd0fe8 100%);
+    color: white;
+  }
+  .fa-facebook {
+    background: linear-gradient(to bottom, #2200ff 0%, #46f2fb 100%);
+    color: white;
+  } 
