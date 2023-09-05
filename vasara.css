@@ -1,0 +1,28 @@
+
+h1{
+    text-align: center;
+transition:transform 1s;
+   
+}
+h1:hover{
+    transform:scale(1.2);
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+    transition:transform 1s;
+}
+h2:hover{
+    transform:scale(1.2);
+}
+p{
+    text-align:center;
+    margin-top: 40px;
+    transition:transform 1s;
+}
+p:hover{
+    transform:scale(1.2);
+}
+*{
+    color: white;
+}
