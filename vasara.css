@@ -45,3 +45,9 @@ p:hover{
  
   width: 100%;
 }
+img{
+  border-width: 10px;
+  border-radius: 30%;
+  border-style: solid;
+  border-color: rgb(121, 19, 5);
+}
